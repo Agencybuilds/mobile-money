@@ -49,7 +49,7 @@ if (isDev) {
   docsRouter.use(
     '/',
     devOnly,
-    // swaggerUi.serve removed; using CDN assets for Swagger UI
+    swaggerUi.serve,
     swaggerUi.setup(spec, {
       customSiteTitle: 'Mobile Money Bridge — API Docs',
       // Use CDN for Swagger UI assets to improve load performance
